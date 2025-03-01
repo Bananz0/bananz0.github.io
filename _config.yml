@@ -20,3 +20,15 @@ exclude:
   - Gemfile.lock
   - node_modules
   - vendor
+
+# Education
+education:
+  - institution: University of Southampton
+    degree: Bachelor of Engineering (BEng), Electrical & Electronics Engineering
+    dates: 2023 - 2026
+  - institution: ONCAMPUS Global
+    degree: Undergraduate Foundation Programme, Engineering Pathway
+    dates: 2022 - 2023
+  - institution: Moi Forces Academy
+    degree: Kenya Certificate of Secondary Education
+    dates: 2018 - 2022
