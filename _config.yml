@@ -1,0 +1,17 @@
+title: Glen Mutinda
+email: glenmuthokaq@gmail.com
+description: >- 
+  Electrical & Electronics Engineering Student | Aspiring Full Stack & Firmware Developer | Passionate about Cybersecurity, Software & Hardware Engineering
+baseurl: "" 
+
+url: "https://glenmuthoka.com" 
+
+github_username:  Bananz0
+linkedin_username: glenmuthoka
+
+# Build settings
+markdown: kramdown
+theme: minima 
+
+plugins:
+  - jekyll-feed

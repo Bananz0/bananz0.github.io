@@ -1,0 +1,39 @@
+/*
+  The "Minima" theme for Jekyll.
+*/
+
+/* Import Minima's CSS */
+@import "minima";
+
+/* Custom CSS (Optional) */
+body {
+  font-family: sans-serif;
+  line-height: 1.6;
+  margin: 20px;
+}
+
+.site-title {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.site-description {
+  font-size: 1.2em;
+  color: #555;
+}
+
+/* Social Links in Footer */
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 1.5em; /* Adjust size as needed */
+    color: #333; /* Adjust color as needed */
+}
+
+.social-links a:hover {
+    color: #007bff; /* Adjust hover color as needed */
+}
