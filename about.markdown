@@ -3,52 +3,69 @@ layout: default
 title: About Me
 ---
 
-## About Me
+<section class="about-section">
+  <div class="section-header">
+    <h2>About Me</h2>
+  </div>
+  
+  <div class="about-content">
+    <div class="about-image">
+      <!-- Replace with your actual photo when available -->
+      <div class="placeholder-image"></div>
+    </div>
+    
+    <div class="about-text">
+      <p>I am a second-year <strong>Electrical & Electronics Engineering</strong> student at the <strong>University of Southampton</strong>, passionate about <strong>embedded systems, cybersecurity, and mixed-signal processing</strong>. My experience spans both <strong>hardware and software development</strong>, with hands-on projects in <strong>integrated circuit design, firmware engineering, and network infrastructure</strong>.</p>
+      
+      <p>Currently, I am a <strong>Junior Software Engineer</strong> contributing to the <strong>ARTEMIS Small Sat-1 Lunar CubeSat Project</strong>, where I work on optimizing flight software and launch control systems.</p>
+      
+      <div class="about-buttons">
+        <a href="{{ '/contact' | relative_url }}" class="btn btn-primary">Get In Touch</a>
+        <a href="{{ '/projects' | relative_url }}" class="btn btn-secondary">View Projects</a>
+      </div>
+    </div>
+  </div>
+</section>
 
-I am a second-year **Electrical & Electronics Engineering** student at the **University of Southampton**, passionate about **embedded systems, cybersecurity, and mixed-signal processing**. My experience spans both **hardware and software development**, with hands-on projects in **integrated circuit design, firmware engineering, and network infrastructure**.
+<section class="education-section">
+  <div class="section-header">
+    <h2>Education</h2>
+  </div>
+  
+  <div class="timeline">
+    {% for edu in site.education %}
+    <div class="timeline-item">
+      <div class="timeline-marker"></div>
+      <div class="timeline-content">
+        <h3>{{ edu.institution }}</h3>
+        <h4>{{ edu.degree }}</h4>
+        <p class="timeline-date">{{ edu.dates }}</p>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
 
-Currently, I am a **Junior Software Engineer** contributing to the **ARTEMIS Small Sat-1 Lunar CubeSat Project**, where I work on optimizing flight software and launch control systems. My expertise lies in **SystemVerilog, C++, embedded development, and hardware security**.
+<section class="experience-section">
+  <div class="section-header">
+    <h2>Experience</h2>
+  </div>
+  
+  <div class="experience-card">
+    <div class="experience-header">
+      <h3>ARTEMIS Small Sat-1 Lunar CubeSat Project</h3>
+      <span class="experience-title">Junior Software Engineer</span>
+      <span class="experience-date">August 2023 - Present</span>
+    </div>
+    
+    <div class="experience-content">
+      <ul class="experience-list">
+        <li>Optimized flight software, reducing system latency by <strong>6%</strong>.</li>
+        <li>Improved reliability by <strong>20%</strong> through robust testing and debugging.</li>
+        <li>Worked in a collaborative team to develop space-grade software.</li>
+      </ul>
+    </div>
+  </div>
+</section>
 
-## Education
-
-- **University of Southampton**  
-  *Bachelor of Engineering (BEng), Electrical & Electronics Engineering (2023 - 2026)*
-- **ONCAMPUS Global**  
-  *Undergraduate Foundation Programme, Engineering Pathway (2022 - 2023)*
-- **Moi Forces Academy**  
-  *Kenya Certificate of Secondary Education (2018 - 2022)*
-
-## Experience
-
-### ARTEMIS Small Sat-1 Lunar CubeSat Project  
-
-#### Junior Software Engineer (August 2023 - Present)
-
-- Optimized flight software, reducing system latency by **6%**.
-- Improved reliability by **20%** through robust testing and debugging.
-- Worked in a collaborative team to develop space-grade software.
-
-### Personal Projects
-
-- **IC Design & Fabrication** – Designed a **TSMC 65nm Node Integrated Circuit** with full DRC/LVS validation.
-- **Containerized Home Server** – Built an **Ubuntu-based** system with Docker, running **Plex, Nextcloud, and HAProxy**.
-- **Hackintosh & Network Security** – Deployed **OPNsense, UniFi NVR, and AdGuard**, securing home networks.
-
-## Skills
-
-- **Programming:** SystemVerilog, C++, Python, JavaScript
-- **Hardware & Embedded Systems:** IC Design, Arduino, Raspberry Pi
-- **Cybersecurity & Networking:** OPNsense, HAProxy, Firewall Configurations
-- **Web & Backend Development:** React.js, Node.js, Express.js
-- **Containerization & DevOps:** Docker, Linux Administration
-
-## Certifications
-
-- **ISACA Membership** – Commitment to IT governance & cybersecurity.
-- **IYNA Certificate** – Neuroscience and human-machine interaction studies.
-
-## Let's Connect
-
-📧 Email: [glenmuthokaq@gmail.com](mailto:glenmuthokaq@gmail.com)  
-🔗 LinkedIn: [linkedin.com/in/glenmuthoka](https://www.linkedin.com/in/glenmuthoka)  
-💻 GitHub: [github.com/Bananz0](https://github.com/Bananz0)  
+<section class="certifications-section">
